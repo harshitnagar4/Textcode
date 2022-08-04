@@ -37,7 +37,7 @@ const showAlert = (message,type)=>{
       <Alert alert={alert}/>
       <Routes>
         <Route path="/" element={<TextForm mode = {mode} showAlert={showAlert} />}/>
-        <Route path="about" element={<About />}/>
+        <Route path="about" element={<About mode = {mode} />}/>
         </Routes>
         </Router>
     </>

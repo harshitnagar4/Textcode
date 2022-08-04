@@ -70,7 +70,7 @@ return (
 <>
 <div className="container">
 <div className="form-floating my-3" style={{color: props.mode==='light'? 'black':'White'}}>
-<h1>Enter The Text So that We Can Anylize Are Text</h1>
+<h1>Try Textcode-Word Counter,character Counter,Remove Extra Spaces</h1>
   <textarea className="form-control" placeholder="Leave a comment here"  rows="10" col="10"  id="box" style={{backgroundColor: props.mode==='light'? 'white':'gray', color: props.mode==='light'? 'black':'White',height: '400px'}} value={text} onChange={changeHandler}></textarea>
 </div>
 <button className='btn btn-primary btn-sm mx-2 my-1' id='btn' onClick={upCase}>Convert Text To the Upper Case</button>
@@ -79,9 +79,9 @@ return (
 <button className='btn btn-primary btn-sm mx-2 my-1' id='btn2' onClick={delCase}>Delete</button>
 <button className='btn btn-primary btn-sm mx-2 my-1' id='btn3' onClick={copyCase}>Copy to Clipboard</button>
 <div style={{color: props.mode==='light'? 'black':'White'}}>
-<h3 className='my-2'>Total Words is {text.split(" ").filter((element)=>{ return element.length!==0}).length} and Total character is{text.length}</h3>
-<h3>Preview of our text</h3>
-<p>{text}</p>
+<h3 className='my-2'>Total Words is {text.split(/\s+/).filter((element)=>{ return element.length!==0}).length} and Total character is{text.split.length}</h3>
+<h3>preview</h3>
+<p>{text.length>0?text:"Write something to preview"}</p>
 </div>
 </div>
 </>
