@@ -57,10 +57,7 @@ export default function TextForm(props) {
     alert('Write your text');
   }
   else{
-    let copyText = document.getElementById('box');
-    copyText.select();
-    copyText.setSelectionRange(0, 9999);
-    navigator.clipboard.writeText(copyText.value);
+    navigator.clipboard.writeText(text);
     props.showAlert("Your text is copied","success");
   }
  
