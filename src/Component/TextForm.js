@@ -76,7 +76,7 @@ return (
 <button className='btn btn-primary btn-sm mx-2 my-1' id='btn2' onClick={delCase}>Delete</button>
 <button className='btn btn-primary btn-sm mx-2 my-1' id='btn3' onClick={copyCase}>Copy to Clipboard</button>
 <div style={{color: props.mode==='light'? 'black':'White'}}>
-<h3 className='my-2'>Total Words is {text.split(/\s+/).filter((element)=>{ return element.length!==0}).length} and Total character is{text.split.length}</h3>
+<h3 className='my-2'>Total Words is {text.split(/\s+/).filter((element)=>{ return element.length!==0}).length} and Total character is {text.length}</h3>
 <h3>preview</h3>
 <p>{text.length>0?text:"Write something to preview"}</p>
 </div>
