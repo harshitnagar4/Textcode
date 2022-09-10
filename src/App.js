@@ -19,15 +19,15 @@ const showAlert = (message,type)=>{
     setAlert(null)
   }, 1500);
 } 
-const removeBodyClasses =()=>{
-  document.body.classList.remove('bg-primary');
-  document.body.classList.remove('bg-success');
-  document.body.classList.remove('bg-danger');
-  document.body.classList.remove('bg-warning');
-}
+// const removeBodyClasses =()=>{
+//   document.body.classList.remove('bg-primary');
+//   document.body.classList.remove('bg-success');
+//   document.body.classList.remove('bg-danger');
+//   document.body.classList.remove('bg-warning');
+// }
   const toggleSwitch = (abc)=>{
-    removeBodyClasses();
-    document.body.classList.add('bg-'+abc);
+ 
+    // document.body.classList.add('bg-'+abc);
     
     if(mode == "light") {
       document.body.style.backgroundColor = "#01254b";

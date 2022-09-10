@@ -19,12 +19,6 @@ export default function Navbar(props) {
         </li>
       </ul>
     </div>
-    <div className="d-flex">
-      <div className="bg-primary rounded mx-2" style={{height: '20px', width:'20px',cursor: 'pointer'}} onClick={()=>{props.toggleSwitch('primary')}}></div>
-      <div className="bg-danger rounded mx-2" style={{height: '20px', width:'20px',cursor: 'pointer'}} onClick={()=>{props.toggleSwitch('danger')}}></div>
-      <div className="bg-success rounded mx-2" style={{height: '20px', width:'20px',cursor: 'pointer'}} onClick={()=>{props.toggleSwitch('success')}}></div>
-      <div className="bg-warning rounded mx-2" style={{height: '20px', width:'20px',cursor: 'pointer'}} onClick={()=>{props.toggleSwitch('warning')}}></div>
-    </div>
     <div className={`form-check form-switch text-${props.mode==='light'? 'dark':'light'}`}>
   <input className="form-check-input" type="checkbox" id="toggleCheck" onClick={()=>{props.toggleSwitch(null)}}/>
   <label className="form-check-label " htmlFor="toggleCheck" >Dark Mode</label>
